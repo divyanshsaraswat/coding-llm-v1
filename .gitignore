@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.env
+.venv
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+
+# VS Code
+.vscode/
+
+# Project Specific - Large Artifacts & Generated Data
+model_output/
+model_tuned/
+data/processed/
+tokenizer/*.model
+tokenizer/*.vocab
+
+# OS Generated
+.DS_Store
+Thumbs.db

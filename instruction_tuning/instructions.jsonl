@@ -1,0 +1,15 @@
+{"instruction": "Write a Python function to calculate the factorial of a number.", "input": "", "output": "def factorial(n):\n    if n == 0:\n        return 1\n    return n * factorial(n - 1)"}
+{"instruction": "Create a function that adds two numbers.", "input": "", "output": "def add(a, b):\n    return a + b"}
+{"instruction": "Implement a function to check if a number is even.", "input": "", "output": "def is_even(n):\n    return n % 2 == 0"}
+{"instruction": "Write a function to return the maximum of a list.", "input": "", "output": "def find_max(nums):\n    if not nums:\n        return None\n    max_val = nums[0]\n    for n in nums:\n        if n > max_val:\n            max_val = n\n    return max_val"}
+{"instruction": "How do I import matplotlib?", "input": "", "output": "import matplotlib.pyplot as plt"}
+{"instruction": "Define a User class with an init method.", "input": "", "output": "class User:\n    def __init__(self, name):\n        self.name = name"}
+{"instruction": "Write a function to reverse a string.", "input": "", "output": "def reverse_string(s):\n    return s[::-1]"}
+{"instruction": "Create a loop that prints 0 to 4.", "input": "", "output": "for i in range(5):\n    print(i)"}
+{"instruction": "Write a function to calculate the area of a circle.", "input": "", "output": "import math\n\ndef area_circle(radius):\n    return math.pi * radius ** 2"}
+{"instruction": "How do I read a file in Python?", "input": "", "output": "with open('filename.txt', 'r') as f:\n    content = f.read()"}
+{"instruction": "Write a function that returns the sum of a list.", "input": "", "output": "def sum_list(L):\n    return sum(L)"}
+{"instruction": "Implement binary search.", "input": "", "output": "def binary_search(arr, target):\n    left, right = 0, len(arr) - 1\n    while left <= right:\n        mid = (left + right) // 2\n        if arr[mid] == target:\n            return mid\n        elif arr[mid] < target:\n            left = mid + 1\n        else:\n            right = mid - 1\n    return -1"}
+{"instruction": "Write a function to check if a string is a palindrome.", "input": "", "output": "def is_palindrome(s):\n    return s == s[::-1]"}
+{"instruction": "Create a dictionary with two keys.", "input": "", "output": "my_dict = {'key1': 'value1', 'key2': 'value2'}"}
+{"instruction": "Write a conditional to check if x is positive.", "input": "", "output": "if x > 0:\n    print('Positive')"}

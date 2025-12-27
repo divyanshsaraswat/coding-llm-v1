@@ -1,0 +1,8 @@
+# Dependency Requirements
+# Purpose: Specify the minimal set of libraries needed for training and inference.
+
+torch
+transformers
+datasets
+sentencepiece
+accelerate

@@ -1,0 +1,47 @@
+def sum_list(nums):
+    total = 0
+    for n in nums:
+        total += n
+    return total
+
+
+def product_list(nums):
+    result = 1
+    for n in nums:
+        result *= n
+    return result
+
+
+def count_occurrences(nums, target):
+    count = 0
+    for n in nums:
+        if n == target:
+            count += 1
+    return count
+
+
+def find_max(nums):
+    if not nums:
+        return None
+    max_val = nums[0]
+    for n in nums:
+        if n > max_val:
+            max_val = n
+    return max_val
+
+
+def find_min(nums):
+    if not nums:
+        return None
+    min_val = nums[0]
+    for n in nums:
+        if n < min_val:
+            min_val = n
+    return min_val
+
+
+def reverse_list(nums):
+    result = []
+    for i in range(len(nums) - 1, -1, -1):
+        result.append(nums[i])
+    return result

@@ -1,0 +1,39 @@
+def count_char(s, ch):
+    count = 0
+    for c in s:
+        if c == ch:
+            count += 1
+    return count
+
+
+def remove_spaces(s):
+    result = ""
+    for c in s:
+        if c != " ":
+            result += c
+    return result
+
+
+def reverse_string(s):
+    result = ""
+    for i in range(len(s) - 1, -1, -1):
+        result += s[i]
+    return result
+
+
+def is_palindrome(s):
+    left = 0
+    right = len(s) - 1
+    while left < right:
+        if s[left] != s[right]:
+            return False
+        left += 1
+        right -= 1
+    return True
+
+
+def first_unique_char(s):
+    for c in s:
+        if s.count(c) == 1:
+            return c
+    return None
